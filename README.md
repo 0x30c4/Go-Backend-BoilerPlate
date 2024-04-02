@@ -1,7 +1,7 @@
 
 <h1 align="center">Go Backend BoilerPlate</h1>
 <p align="center">
-  <img src="https://img.shields.io/github/languages/top/0x30c4/GhostBin?style=flat-square" alt="Test">
+  <img src="https://img.shields.io/github/languages/top/0x30c4/Go-Backend-BoilerPlate?style=flat-square" alt="Test">
 </p>
 <p align="justify">
   Simple Golang Backend BoilerPlate code. With the least amount of third party modules. I use this BoilerPlate backend for almost all of my golang backends.
@@ -12,8 +12,9 @@
 
 ## Table of Contents
 
-- [How To Use](#how-to-use)
-  - [Basic Usage](#basic-usage)
+- [Introduction](#introduction)
+  - [Project Structure](#project-structure)
+  - [Setup](#setup)
 - [Deployment](#deployment)
   - [Built With](#built-with)
   - [Prerequisites](#prerequisites)
@@ -26,19 +27,70 @@
 - [Contribution](#contribution)
 - [Donate](#donate)
 
-## How To Use
+## Introduction
 
-### Basic Usage
+### Project Structure.
+```
+.
+|-- .air.toml
+|-- .gitignore
+|-- Dockerfile
+|-- Dockerfile.dev
+|-- LICENSE
+|-- Makefile
+|-- README.md
+|-- cmd
+|   `-- ghostbin
+|       `-- main.go
+|-- data
+|   |-- redis_data
+|   |   `-- .gitkeep
+|   `-- redis_data_dev
+|       `-- .gitkeep
+|-- docker-compose.dev.yml
+|-- docker-compose.yml
+|-- env-example
+|-- go.mod
+|-- go.sum
+|-- internal
+|   |-- env
+|   |   `-- env.go
+|   |-- handlers
+|   |   |-- handlers.go
+|   |   `-- utils.go
+|   |-- logger
+|   |   `-- logger.go
+|   |-- middleware
+|   |   `-- middleware.go
+|   |-- redis
+|   |   `-- redis.go
+|   `-- routes
+|       |-- .null-ls_323244_routes.go
+|       `-- routes.go
+|-- logs
+|   `-- .gitkeep
+|-- public
+|   `-- index.html
+|-- redis
+|   `-- redis.conf
+|-- scripts
+|   |-- run-local.sh
+|   `-- run-tests.sh
+`-- test
+    |-- logger_test.go
+    `-- redis_test.go
+```
 
+### Setup
 
-find . -type f -exec  sed -i "s/github.com\/0x30c4\/Go-Backend-BoilerPlate/NAME_OF_YOUR_PROJECT/g" {} +
-
+Git Clone the proejct and change the project name use this command after cloning the repo.
 ```bash
-$ git clone https://github.com/0x30c4/Go-Backend-BoilerPlate.git
+$ git clone https://github.com/0x30c4/Go-Backend-BoilerPlate.git NAME_OF_YOUR_PROJECT
+$ cd NAME_OF_YOUR_PROJECT
+$ find . -type f -exec  sed -i "s/github.com\/0x30c4\/Go-Backend-BoilerPlate/NAME_OF_YOUR_PROJECT/g" {} +
 ```
 
 ## Deployment
-Want to run a server like this? clone it! Remember centralization is bad.
 
 ### Built With.
 
