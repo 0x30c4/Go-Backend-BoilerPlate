@@ -1,0 +1,16 @@
+!./bin
+!./tmp
+!./data/redis_data
+!./data/redis_data_dev
+
+data/redis_data/*
+data/redis_data_dev/*
+bin/*
+tmp/*
+.null*
+.env*
+dump.rdb
+*.log
+testcover.out
+testcover.html
+.DS_Store

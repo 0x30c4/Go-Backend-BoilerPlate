@@ -1,0 +1,6 @@
+HOST="0.0.0.0"
+PORT=8080
+DOMAIN="localhost"
+LOG_FILE="./logs/backend_server_log.prod.log"
+REDIS_ADDRESS="redis:6379"
+RELEASE_MODE=1
